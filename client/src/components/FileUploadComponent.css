@@ -1,0 +1,202 @@
+/* General Container Styles */
+.file-upload-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.upload-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* File Input and Button Styles */
+.file-input-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.file-upload-input {
+  font-size: 1rem;
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.file-upload-input:focus {
+  border-color: #4a90e2;
+}
+
+.file-upload-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.file-upload-button:hover {
+  background-color: #2980b9;
+}
+
+.file-upload-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Status Message Styles */
+.upload-status {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  background-color: #d4edda;
+  color: #155724;
+  text-align: center;
+}
+
+.upload-status.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Sensitive Data Section */
+.sensitive-data-container {
+  margin-bottom: 2rem;
+}
+
+.sensitive-data-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.sensitive-data-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sensitive-data-item {
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.sensitive-data-item strong {
+  color: #e74c3c;
+  margin-right: 0.5rem;
+}
+
+/* New Styles for File Details */
+.file-details {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.file-details p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.file-details strong {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+/* New Styles for File Viewing and Download Components */
+.processed-files-container {
+  margin-top: 2rem;
+}
+
+.processed-files-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.file-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.action-group {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.action-group h4 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.action-group p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.view-button, .download-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  flex: 1;
+  max-width: 150px;
+}
+
+.view-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.view-button:hover {
+  background-color: #2980b9;
+}
+
+.download-button {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #27ae60;
+}
+
+.highlighted-sensitive {
+  background-color: yellow;
+  color: red;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
